@@ -1,0 +1,57 @@
+[Desktop Entry]
+Type=Service
+ServiceTypes=KonqPopupMenu/Plugin
+MimeType=all/all;
+Actions=peazipExtFolder;peazipExtHere;peazipExt;peazipZip;peazipSeparateZips;peazipAdd;peazipOpen;
+X-KDE-Priority=TopLevel
+X-KDE-StartupNotify=false
+X-KDE-Submenu=PeaZip
+
+[Desktop Action peazipExtFolder]
+Exec=peazip -ext2folder %F
+Icon=peazip
+Name=Extract here to new folder
+Name[en_GB]=Extract here to new folder
+Name[ro]=Extrage aici în folder nou
+
+[Desktop Action peazipExtHere]
+Exec=peazip -ext2here %F
+Icon=peazip
+Name=Extract here
+Name[en_GB]=Extract here
+Name[ro]=Extrage aici
+
+[Desktop Action peazipExt]
+Exec=peazip -ext2main %F
+Icon=peazip
+Name=Extract
+Name[en_GB]=Extract
+Name[ro]=Extrage
+
+[Desktop Action peazipZip]
+Exec=peazip -add2zip %F
+Icon=peazip
+Name=Add to new ZIP
+Name[en_GB]=Add to new ZIP
+Name[ro]=Adaugă la arhivă ZIP nouă
+
+[Desktop Action peazipSeparateZips]
+Exec=peazip -add2separatezip %F
+Icon=peazip
+Name=Add to separate ZIPs
+Name[en_GB]=Add to separate ZIPs
+Name[ro]=Adaugă la arhive ZIP separate
+
+[Desktop Action peazipAdd]
+Exec=peazip -add2archive %F
+Icon=peazip
+Name=Add to archive
+Name[en_GB]=Add to archive
+Name[ro]=Arhivează
+
+[Desktop Action peazipOpen]
+Exec=peazip -ext2browse %F
+Icon=peazip
+Name=Open
+Name[en_GB]=Open
+Name[ro]=Open
